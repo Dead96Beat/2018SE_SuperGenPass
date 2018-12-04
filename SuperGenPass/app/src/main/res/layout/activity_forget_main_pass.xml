@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.staticfree.SuperGenPass.ForgetMasterPass">
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="397dp"
+        android:layout_height="311dp"
+        android:focusable="auto"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="33dp">
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="What's My Name?"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/answerEdit"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Answer"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/websiteEdit"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:hint="WebSite Domain"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/getButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get" />
+
+        <Spinner
+            android:id="@+id/mpSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

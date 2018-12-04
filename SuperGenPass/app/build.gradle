@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        applicationId "info.staticfree.SuperGenPass"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionName '3.1.1'
+        versionCode 24
+
+        testApplicationId "info.staticfree.SuperGenPass.test"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        setProperty("archivesBaseName", "$applicationId-$versionCode-$versionName")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            applicationIdSuffix '.debug'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.android.support:support-annotations:23.1.1'
+    compile 'commons-codec:commons-codec:1.8'
+    compile 'com.google.zxing:android-integration:3.2.1'
+}
